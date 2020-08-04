@@ -3,6 +3,17 @@
 ## Unreleased
 
 ### Added
+- Small viral reference set and read simulator for future testing
+- Build options to aid testing
+
+### Changed
+
+### Fixed
+- Modified build code to prevent insertion of minimizers with ambiguous bases
+
+## [2.0.9] - 2020-04-07 (beta)
+
+### Added
 - Expose --load-factor setting to kraken2-build
 - New --minimum-hit-groups option to kraken2
 
@@ -11,11 +22,15 @@
   make classification by default
 - Allow build options to pass through to subsequent invocations (e.g.,
   k-mer length for 16S DBs)
+- Removed env options for library downloads (no longer available from
+  same NCBI location)
+- Updated SILVA to release 138
 
 ### Fixed
 - Removed mention of --fastq-input from Manual
 - Made PE read identifier suffix trimming more restrictive (only on /1 and /2)
 - Bug where some reads would be classified with taxid 0
+- Bug that didn't allow kraken2-inspect to work with large databases
 
 ## [2.0.8] - 2019-04-25 (beta)
 
