@@ -120,6 +120,7 @@ case $library_name in
     1>&2 echo "Unsupported library.  Valid options are: "
     1>&2 echo "  archaea bacteria viral fungi plant protozoa human plasmid"
     1>&2 echo "  mitochondrion plastid nr nt UniVec UniVec_Core"
+    1>&2 echo "  invertebrate vertebrate_mammalian vertebrate_other"
     exit 1
     ;;
 esac
