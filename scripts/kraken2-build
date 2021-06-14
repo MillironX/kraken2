@@ -227,15 +227,10 @@ Task options (exactly one must be selected):
   --download-taxonomy        Download NCBI taxonomic information
   --download-library TYPE    Download partial library
                              (TYPE = one of "archaea", "bacteria", "plasmid",
-<<<<<<< HEAD
-                             "viral", "human", "fungi", "plant", "protozoa",
-                             "nr", "nt", "UniVec", "UniVec_Core", "invertebrate",
-                            "vertebrate_mammalian", "vertebrate_other")
-=======
                              "mitochondrion", "plastid", "viral", "human",
                              "fungi", "plant", "protozoa", "nr", "nt",
-                             "UniVec", "UniVec_Core")
->>>>>>> master-holder
+                             "UniVec", "UniVec_Core", "invertebrate",
+                             "vertebrate_mammalian", "vertebrate_other")
   --special TYPE             Download and build a special database
                              (TYPE = one of "greengenes", "silva", "rdp")
   --add-to-library FILE      Add FILE to library
