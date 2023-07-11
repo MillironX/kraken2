@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2021, Derrick Wood <dwood@cs.jhu.edu>
+ * Copyright 2013-2023, Derrick Wood <dwood@cs.jhu.edu>
  *
  * This file is part of the Kraken 2 taxonomic sequence classification system.
  */
@@ -11,6 +11,8 @@ using std::string;
 namespace kraken2 {
 
 void StripString(string &str) {
+  if (str.size() == 0)
+    return;
   while (isspace(str.back()))
     str.pop_back();
 }

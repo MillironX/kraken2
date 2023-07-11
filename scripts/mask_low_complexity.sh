@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2013-2021, Derrick Wood <dwood@cs.jhu.edu>
+# Copyright 2013-2023, Derrick Wood <dwood@cs.jhu.edu>
 #
 # This file is part of the Kraken 2 taxonomic sequence classification system.
 
@@ -13,7 +13,7 @@ set -o pipefail  # Stop on failures in non-final pipeline commands
 
 target="$1"
 
-MASKER="dustmasker"
+MASKER="k2mask"
 if [ -n "$KRAKEN2_PROTEIN_DB" ]; then
   MASKER="segmasker"
 fi
